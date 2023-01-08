@@ -72,6 +72,15 @@
   max-width: 30ch;
 }
 
+.imageContainer {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.imageContainer img {
+  border-radius: 10px;
+}
 .center {
   display: flex;
   justify-content: center;
