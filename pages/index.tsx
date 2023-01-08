@@ -15,13 +15,7 @@ export default function Home({ records }: PageProps) {
         <div className={styles.grid}>
           {records.map((record, i) => {
             return (
-              <a
-                key={i}
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                className={styles.card}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <div key={i} className={styles.card}>
                 <h2>
                   {record.basic_information.title} -{" "}
                   {record.basic_information.artists[0].name}
@@ -34,7 +28,7 @@ export default function Home({ records }: PageProps) {
                     priority
                   />
                 </div>
-              </a>
+              </div>
             );
           })}
         </div>
